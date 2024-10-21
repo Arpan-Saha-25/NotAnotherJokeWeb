@@ -13,7 +13,7 @@ A simple web application that generates random programming jokes to bring a smil
 
 ## Demo
 
-![Jokes Generator Demo](link) 
+![NotAnotherJokeWeb](./ss.png) 
 
 ## Features
 
@@ -27,21 +27,22 @@ To get started with the Jokes Generator, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/jokes-generator.git
+   git clone https://github.com/Arpan-Saha-25/NotAnotherJokeWeb
+   ```
 2. Open the index.html file in your favorite web browser. 🌐
 
 ## Usage
 
 Once you open the application, a joke will be displayed automatically. 🎉
+
 After 2 seconds, you'll be prompted to see another joke. ⏳
+
 Click "OK" to get a new joke or "Cancel" to stop. ❌
 
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request. You can help by:
 
-Adding more jokes 🤣
-Improving the styling 🎨
-Enhancing functionality 🚀
+##### Adding more jokes 🤣, Improving the styling 🎨, Enhancing functionality 🚀
 
 ### Made by @Arpan Saha 👋
