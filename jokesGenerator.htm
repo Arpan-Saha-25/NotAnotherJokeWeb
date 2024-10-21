@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Generator</title>
+
+    <!-- css  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+        * {
+            font-family: "Rethink Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            position: relative;
+            min-height: 100vh;
+            /* background: linear-gradient(#e66465, #9198e5); */
+            /* background: linear-gradient(135deg, #FF7E5F, #FF3B30); */
+            background: linear-gradient(135deg, #00C6FF, #0072FF);
+            color: #FFFFFF;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            /* Center the footer */
+            background-color: rgba(0, 0, 0, 0.403);
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+            /* Center the text in the footer */
+        }
+
+        footer a {
+            text-decoration: none;
+            /* Remove underline from link */
+            color: yellow;
+            /* Inherit color from footer */
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        Made by <a href="https://github.com/Arpan-Saha-25">@Arpan Saha</a>
+    </footer>
+
+</body>
+
+<!-- js  -->
+<script>
+    function showJoke() {
+        let randomIndex = Math.floor(Math.random() * arrlen);
+        p1.textContent = `"` + jokes[randomIndex] + `"`;
+
+        setTimeout(() => {
+            next = confirm("Do you need another joke?");
+            if (next) {
+                showJoke(); // Call the function again if the user wants another joke
+            }
+        }, 2000); // Display joke for 2 seconds
+    }
+
+    const jokes = [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why did the developer go broke? Because he used up all his cache.",
+        "How many programmers does it take to change a lightbulb? None, that's a hardware problem.",
+        "Why was the computer cold? It left its Windows open!",
+        "Why do Java developers wear glasses? Because they don’t see sharp.",
+        "What do you call a group of musical gamers? A bandicoot!",
+        "Why did the game developer break up with his girlfriend? She had too many issues!",
+        "Why did the coder get kicked off the plane? Because he kept trying to debug the flight.",
+        "What do you call a computer that sings? A Dell!",
+        "Why did the programmer quit his job? Because he didn't get arrays.",
+        "What do you call a programming language that loves to gossip? A gossip-ware!",
+        "Why did the computer go to therapy? It had too many bytes!",
+        "Why are assembly programmers always soaking wet? Because they work below C-level.",
+        "Why did the programmer bring a ladder to work? Because he wanted to reach new heights!",
+        "Why did the programmer hate nature? It had too many bugs.",
+        "What did the computer do at lunchtime? Had a byte!",
+        "Why can't programmers tell jokes? They always end up with too many exceptions.",
+        "Why do programmers hate the outdoors? There are too many bugs!",
+        "How do you comfort a JavaScript bug? You console it!",
+        "Why was the math book sad? It had too many problems!",
+        "What do you call an optimistic programmer? A “happy coder”!",
+        "Why did the coder cross the road? To get to the other side of the algorithm.",
+        "Why did the web developer stay home? He had too many “cache” problems.",
+        "How does a computer get drunk? It takes screenshots.",
+        "What’s a programmer’s favorite hangout place? Foo Bar!",
+        "Why do Python programmers prefer snakes? They love to scale.",
+        "Why was the developer unhappy at his job? He wanted arrays but only got lists.",
+        "What did the programmer say when he found two bugs? “That’s a double issue!”",
+        "Why did the programmer use a lightbulb? Because it was a bright idea!",
+        "Why did the game designer always carry a pencil? In case he had to draw a line!",
+        "What’s a computer’s favorite snack? Microchips!",
+        "Why was the developer good at tennis? Because he had great server skills!",
+        "What’s a gamer’s favorite type of music? Chiptune!",
+        "Why did the function break up with the variable? It found someone more constant!",
+        "Why did the software developer go broke? Because he lost his domain.",
+        "What do you call a clever programmer? A sharp object!",
+        "Why did the programmer go to art school? To learn how to draw better algorithms.",
+        "Why was the robot so bad at soccer? It kept kicking up a fuss.",
+        "What do you call a geek who loves playing cards? A card-carrying gamer!",
+        "Why did the database administrator break up with his girlfriend? She had too many relations.",
+        "How do you organize a programming party? You “code” it!",
+        "Why did the coder get a promotion? He always knew how to handle exceptions.",
+        "What do you call a programmer who loves summer? A sunny variable!",
+        "Why do video game characters never get lost? They always have a map!",
+        "How does a hacker break up? They just ghost you!",
+        "What do you call a game about gardening? A plant-former!",
+        "Why did the gamer go to school? To improve his “leveling up” skills.",
+        "Why was the computer tired? It had too many tabs open.",
+        "What did the gamer say when he lost? “I need a respawn!”",
+        "What’s a coder’s favorite beverage? Java!",
+        "Why did the console break up with the PC? Too much drama!"
+    ];
+
+    // Obtaining array length
+    const arrlen = jokes.length;
+
+    // Declaring variable for confirmation from user
+    let next;
+
+    // Adjusting the html with some CSS
+    const p1 = document.createElement('p');
+    p1.className = "p1";
+    document.body.appendChild(p1);
+    document.body.style.margin = "15px";
+    p1.style.display = "flex";
+    p1.style.justifyContent = "center";
+    p1.style.fontSize = "2em";
+    p1.style.alignItems = "center";
+    p1.style.textAlign = "center";
+    p1.style.height = "100vh";
+
+    // calling the function
+    showJoke(); // Start the joke display
+</script>
+
+</html>
